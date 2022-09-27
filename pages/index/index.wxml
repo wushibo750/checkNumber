@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">CheckNumber</view>
+    <view class="page__desc">欢迎来到班级清点人数小程序 o(^▽^)o </view>
+  </view>
+  <view class="upload">
+    <view class="upload_button">
+      <button class="weui-btn" type="primary" class="btn"  bindtap="get_student_image">
+        上传学生图片
+      </button>
+    </view>
+  </view>
+    
+  <view class="page__hd" class="img">
+    <image src="{{imageUrl}}" mode="aspectFit" />
+  </view>
+  
+  <button class="weui-btn" type="primary" class="btn1" bindtap="recognition_student" >
+      识别学生人数
+  </button>
+
+  <view class="page__hd">
+    <view class="icon-box">
+        <icon type="{{load_logo}}" size="32"></icon>
+        <view class="icon-box__ctn">
+            <view class="icon-box__title">{{load_title}}</view>
+            <view class="icon-box__desc">{{load_message}}</view>
+        </view>
+    </view>
+  </view>
+
+</view>
+<view class="student">
+    学生人数为：{{student_num}}人
+</view>
+
