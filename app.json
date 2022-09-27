@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/weui/weui"
+    "pages/weui/weui",
+    "/README.md"
   ],
   "window": {
     "backgroundTextStyle": "light",
